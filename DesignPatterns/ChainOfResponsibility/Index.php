@@ -9,6 +9,14 @@
 namespace DesignPatterns\ChainOfResponsibility;
 require __DIR__ . '/../../vendor/autoload.php';
 
+/*
+require 'HomeChecker.php';
+require 'HomeStatus.php';
+require 'Alarm.php';
+require 'Lights.php';
+require 'Locks.php';
+*/
+
 use DesignPatterns\ChainOfResponsibility\Locks;
 use DesignPatterns\ChainOfResponsibility\Lights;
 use DesignPatterns\ChainOfResponsibility\Alarm;

@@ -10,8 +10,11 @@ namespace DesignPatterns\ChainOfResponsibility;
 
 class HomeStatus
 {
+    /*
+     * If any property set as false, handler will throw an error message.
+     */
     public $alarmOn = true;
-    public $locked = false;
+    public $locked = true;
     public $lightsOff = true;
 
 }

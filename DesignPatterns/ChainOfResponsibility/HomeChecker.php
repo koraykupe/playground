@@ -20,4 +20,12 @@ abstract class HomeChecker
     {
         $this->successor = $successor;
     }
+
+    public function next(HomeStatus $home)
+    {
+        if ($this->successor)
+        {
+            $this->successor->check($home);
+        }
+    }
 }

@@ -17,6 +17,9 @@
     "squizlabs/php_codesniffer": "1.5.*"
   },
   "autoload": {
+    "classmap": [
+      "DesignPattern"
+    ],
     "psr-4": {
       "DesignPatterns\\": ""
     }
