@@ -7,7 +7,7 @@
  * Time: 10:53
  */
 namespace DesignPatterns\ChainOfResponsibility;
-require __DIR__ . '/../../vendor/autoload.php';
+require __DIR__ . '/../../../vendor/autoload.php';
 
 /*
 require 'HomeChecker.php';
