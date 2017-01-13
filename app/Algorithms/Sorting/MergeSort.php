@@ -13,12 +13,11 @@ function mergeSort($data) {
     if(count($data)>1) {
 
         // Find out the middle of the current data set and split it there to obtain to halfs
-
         $data_middle = round(count($data)/2, 0, PHP_ROUND_HALF_DOWN);
 
         // and now for some recursive magic
-        $data_part1 = mergesort(array_slice($data, 0, $data_middle));
-        $data_part2 = mergesort(array_slice($data, $data_middle, count($data)));
+        $data_part1 = mergeSort(array_slice($data, 0, $data_middle));
+        $data_part2 = mergeSort(array_slice($data, $data_middle, count($data)));
 
         // Setup counters so we can remember which piece of data in each half we're looking at
         $counter1 = $counter2 = 0;
