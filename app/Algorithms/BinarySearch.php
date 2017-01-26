@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: koraykupe
- * Date: 10.01.2017
- * Time: 15:42
- */
 
 $list = [3, 5, 8, 10, 14, 22, 28, 33];
 $number = 14;
