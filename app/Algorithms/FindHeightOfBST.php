@@ -5,6 +5,7 @@
  * @author   Koray Küpe <github@koraykupe.com.tr>
  * @category Algorithms
  * @file     It finds height of a given Binary Search Tree
+ *
  */
 
 class Node
@@ -19,6 +20,11 @@ class Node
 }
 class Solution
 {
+    /**
+     * @param $root
+     * @param $data
+     * @return Node
+     */
     public function insert($root, $data)
     {
         if ($root==null) {
@@ -35,12 +41,23 @@ class Solution
         }
     }
 
-    public function getHeight($root)
+
+    /**
+     * @param $root
+     * @return int
+     * if t is empty height(t) = -1
+     * else height(t) = 1 + MAX(height(leftSubtree(t), rightSubtree(t)))
+     */
+    public function getHeight(Node $root)
     {
         if ($root == null) {
             return -1;
         }
 
+        // Cooler solution
+        return 1 + max($this->getHeight($root->left), $this->getHeight($root->right));
+
+        /*
         $left = $this->getHeight($root->left);
         $right = $this->getHeight($root->right);
 
@@ -49,6 +66,7 @@ class Solution
         } else {
             return $right+1;
         }
+        */
     }
 }
 
